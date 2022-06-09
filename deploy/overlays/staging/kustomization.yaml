@@ -8,3 +8,6 @@ resources:
   - namespace.yaml
 transformers:
   - labels.yaml
+images:
+- name: backend
+  newTag: 6.1.5
