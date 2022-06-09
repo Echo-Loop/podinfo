@@ -16,7 +16,7 @@ Specifications:
 * Graceful shutdown on interrupt signals
 * File watcher for secrets and configmaps
 * Instrumented with Prometheus and Open Telemetry
-* Structured logging with zap 
+* Structured logging with zap
 * 12-factor app with viper
 * Fault injection (random errors and latency)
 * Swagger docs
@@ -30,7 +30,7 @@ Specifications:
 Web API:
 
 * `GET /` prints runtime information
-* `GET /version` prints podinfo version and git commit hash 
+* `GET /version` prints podinfo version and git commit hash
 * `GET /metrics` return HTTP requests duration and Go runtime metrics
 * `GET /healthz` used by Kubernetes liveness probe
 * `GET /readyz` used by Kubernetes readiness probe
@@ -38,7 +38,7 @@ Web API:
 * `POST /readyz/disable` signals the Kubernetes LB to stop sending requests to this instance
 * `GET /status/{code}` returns the status code
 * `GET /panic` crashes the process with exit code 255
-* `POST /echo` forwards the call to the backend service and echos the posted content 
+* `POST /echo` forwards the call to the backend service and echos the posted content
 * `GET /env` returns the environment variables as a JSON array
 * `GET /headers` returns a JSON with the request HTTP headers
 * `GET /delay/{seconds}` waits for the specified period
@@ -62,7 +62,7 @@ Web UI:
 
 ![podinfo-ui](https://raw.githubusercontent.com/stefanprodan/podinfo/gh-pages/screens/podinfo-ui-v3.png)
 
-To access the Swagger UI open `<podinfo-host>/swagger/index.html` in a browser.
+To access the Swagger UI open `<podinfo-host>/swagger/index.html` in a browser woot.
 
 ### Guides
 
